@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>🎈 Balloon Pop - Mode Select</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/menu.css') }}">
+</head>
+<body class="menu-body">
+
+<!-- Animated background particles -->
+<div class="bg-particles" id="bgParticles"></div>
+
+<!-- Floating balloons in background -->
+<div class="bg-balloons" id="bgBalloons"></div>
+
+<div class="menu-container">
+  <!-- Logo / Title -->
+  <div class="game-logo">
+    <div class="logo-emoji">🎈</div>
+    <h1 class="game-title">BALLOON POP</h1>
+    <p class="game-subtitle">Hand-Tracking Arcade</p>
+    <div class="title-glow"></div>
+  </div>
+
+  <!-- Mode Selection Cards -->
+  <div class="mode-cards">
+    <!-- Single Player -->
+    <div class="mode-card" id="singleCard" onclick="selectMode('single')">
+      <div class="card-glow"></div>
+      <div class="card-icon">🙋</div>
+      <h2 class="card-title">Single Player</h2>
+      <p class="card-desc">Test your reflexes alone! Pop balloons using hand gestures through your webcam. Progress through 10 exciting levels!</p>
+      <ul class="card-features">
+        <li>✅ 10 Progressive Levels</li>
+        <li>✅ Power-ups & Combos</li>
+        <li>✅ Personal Best Tracking</li>
+        <li>✅ Real-time Hand Tracking</li>
+      </ul>
+      <div class="card-btn">SELECT MODE</div>
+    </div>
+
+    <!-- Two Player -->
+    <div class="mode-card" id="twoCard" onclick="selectMode('two')">
+      <div class="card-glow card-glow-alt"></div>
+      <div class="card-icon">👫</div>
+      <h2 class="card-title">Two Player</h2>
+      <p class="card-desc">Challenge a friend! Split-screen battle — each player pops balloons on their side. Most points wins!</p>
+      <ul class="card-features">
+        <li>✅ Split-Screen Battle</li>
+        <li>✅ Head-to-Head Competition</li>
+        <li>✅ Live Score Comparison</li>
+        <li>✅ Winner Celebration</li>
+      </ul>
+      <div class="card-btn card-btn-alt">SELECT MODE</div>
+    </div>
+  </div>
+
+  <!-- Player Name Modal (Two Player) -->
+  <div class="modal-overlay" id="nameModal">
+    <div class="modal-box">
+      <h2>👫 Enter Player Names</h2>
+      <div class="name-inputs">
+        <div class="name-field">
+          <label>🔵 Player 1 (Left Side)</label>
+          <input type="text" id="p1Name" placeholder="Player 1 Name" maxlength="12">
+        </div>
+        <div class="name-field">
+          <label>🔴 Player 2 (Right Side)</label>
+          <input type="text" id="p2Name" placeholder="Player 2 Name" maxlength="12">
+        </div>
+      </div>
+      <div class="modal-btns">
+        <button class="btn-cancel" onclick="closeModal()">Cancel</button>
+        <button class="btn-start" onclick="startTwoPlayer()">🎮 Start Battle!</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Single Player Name Modal -->
+  <div class="modal-overlay" id="singleModal">
+    <div class="modal-box">
+      <h2>🙋 Enter Your Name</h2>
+      <div class="name-inputs">
+        <div class="name-field">
+          <label>🎈 Player Name</label>
+          <input type="text" id="spName" placeholder="Your Name" maxlength="12">
+        </div>
+      </div>
+      <div class="modal-btns">
+        <button class="btn-cancel" onclick="closeSingleModal()">Cancel</button>
+        <button class="btn-start" onclick="startSinglePlayer()">🚀 Let's Play!</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Instructions -->
+  <div class="instructions">
+    <h3>📖 How to Play</h3>
+    <div class="instruction-steps">
+      <div class="step"><span class="step-num">1</span><span>Allow webcam access when prompted</span></div>
+      <div class="step"><span class="step-num">2</span><span>Move your hand to track balloons</span></div>
+      <div class="step"><span class="step-num">3</span><span>Touch balloons with your fingertip to pop them</span></div>
+      <div class="step"><span class="step-num">4</span><span>Avoid 💣 bombs — they reduce your score!</span></div>
+    </div>
+  </div>
+</div>
+
+<script src="{{ url_for('static', filename='js/menu.js') }}"></script>
+</body>
+</html>
