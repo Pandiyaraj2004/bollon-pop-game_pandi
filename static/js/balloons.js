@@ -254,23 +254,23 @@ class Balloon {
 // ── Level Configuration ──────────────────────
 const LEVEL_CONFIGS = [
   // Level 1
-  { level: 1,  time: 60, balloonSpeed: 1.2, spawnRate: 2200, maxBalloons: 5,  tip: 'Pop balloons with your fingertip!' },
+  { level: 1,  time: 60, balloonSpeed: 7.2, spawnRate: 2200, maxBalloons: 10,  tip: 'Pop balloons with your fingertip!' },
   // Level 2
-  { level: 2,  time: 60, balloonSpeed: 1.5, spawnRate: 2000, maxBalloons: 6,  tip: 'Watch out for 💣 bombs!' },
+  { level: 2,  time: 60, balloonSpeed: 12.5, spawnRate: 2000, maxBalloons: 15,  tip: 'Watch out for 💣 bombs!' },
   // Level 3
-  { level: 3,  time: 55, balloonSpeed: 1.7, spawnRate: 1800, maxBalloons: 7,  tip: 'Grab ⭐ bonus balloons for big points!' },
+  { level: 3,  time: 55, balloonSpeed: 16.7, spawnRate: 1800, maxBalloons: 20,  tip: 'Grab ⭐ bonus balloons for big points!' },
   // Level 4
-  { level: 4,  time: 55, balloonSpeed: 2.0, spawnRate: 1600, maxBalloons: 8,  tip: '⚡ Speed balloons are worth more!' },
+  { level: 4,  time: 55, balloonSpeed: 20.0, spawnRate: 1600, maxBalloons: 25,  tip: '⚡ Speed balloons are worth more!' },
   // Level 5
-  { level: 5,  time: 50, balloonSpeed: 2.2, spawnRate: 1500, maxBalloons: 9,  tip: '🌀 Slow-mo helps you catch fast ones!' },
+  { level: 5,  time: 50, balloonSpeed: 25.2, spawnRate: 1500, maxBalloons: 25,  tip: '🌀 Slow-mo helps you catch fast ones!' },
   // Level 6
-  { level: 6,  time: 50, balloonSpeed: 2.5, spawnRate: 1300, maxBalloons: 10, tip: 'Go for combos for bonus points!' },
+  { level: 6,  time: 50, balloonSpeed: 30.5, spawnRate: 1300, maxBalloons: 25, tip: 'Go for combos for bonus points!' },
   // Level 7
-  { level: 7,  time: 45, balloonSpeed: 2.8, spawnRate: 1200, maxBalloons: 12, tip: 'Stay focused — more bombs incoming!' },
+  { level: 7,  time: 45, balloonSpeed: 35.0, spawnRate: 1200, maxBalloons: 25, tip: 'Stay focused — more bombs incoming!' },
   // Level 8
-  { level: 8,  time: 45, balloonSpeed: 3.0, spawnRate: 1100, maxBalloons: 13, tip: 'Double score activated — pop fast!' },
+  { level: 8,  time: 45, balloonSpeed: 40.0, spawnRate: 1100, maxBalloons: 25, tip: 'Double score activated — pop fast!' },
   // Level 9
-  { level: 9,  time: 40, balloonSpeed: 3.4, spawnRate: 1000, maxBalloons: 14, tip: 'Almost there! Keep going!' },
+  { level: 9,  time: 40, balloonSpeed: 45.1, spawnRate: 1000, maxBalloons: 25, tip: 'Almost there! Keep going!' },
   // Level 10
-  { level: 10, time: 40, balloonSpeed: 3.8, spawnRate: 850,  maxBalloons: 16, tip: '🔥 FINAL LEVEL — Give it everything!' },
+  { level: 10, time: 40, balloonSpeed: 50.0, spawnRate: 850,  maxBalloons: 25, tip: '🔥 FINAL LEVEL — Give it everything!' },
 ];
